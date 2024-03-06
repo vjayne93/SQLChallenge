@@ -9,13 +9,13 @@ CREATE TABLE employees (
 	birth_date DATE NOT NULL,
 	first_name VARCHAR (45),
 	last_name VARCHAR (45),
-	sex varchar(1),
+	sex VARCHAR(1),
 	hire_date DATE NOT NULL
 );
 
 CREATE TABLE departments (
-	dept_no varchar(15) PRIMARY KEY,
-	dept_name varchar(30)
+	dept_no VARCHAR(15) PRIMARY KEY,
+	dept_name VARCHAR(30)
 );
 
 CREATE TABLE dept_emp (
@@ -24,7 +24,7 @@ CREATE TABLE dept_emp (
 );
 CREATE TABLE dept_manager (
 	dept_no VARCHAR (15) references departments(dept_no),
-	emp_no varchar(15)
+	emp_no VARCHAR(15)
 );
 CREATE TABLE salaries (
     emp_no VARCHAR(15),
